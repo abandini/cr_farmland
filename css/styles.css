@@ -6,13 +6,37 @@
   --background: #FAFAFA;
   --text: #212121;
   --shadow: 0 2px 8px rgba(33,33,33,0.08);
+  --content-max-width: 1200px;
+  --content-padding: 1.5rem;
 }
+
+/* Base Styles */
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background: var(--background);
   color: var(--text);
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Container for content width control */
+.container {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 var(--content-padding);
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -164,6 +188,14 @@ a {
 }
 
 /* Testimonial */
+.testimonial-image {
+  max-width: 200px;
+  float: right;
+  margin-left: 1em;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+
 #testimonials blockquote {
   font-style: italic;
   border-left: 4px solid var(--accent);
@@ -214,29 +246,119 @@ form input[type="submit"] {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  :root {
+    --content-padding: 1.2rem;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  .card {
+    padding: 1.5em;
+  }
+}
+
 @media (max-width: 900px) {
+  body {
+    font-size: 15px;
+  }
   .hero img {
     height: 280px;
   }
+  .hero-content h1 {
+    font-size: 2em;
+    padding: 0.3em 0.5em;
+  }
+  .hero-content h2 {
+    font-size: 1.2em;
+  }
   .card {
-    padding: 1em;
+    padding: 1.2em;
+  }
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  form {
+    max-width: 100%;
   }
 }
+
 @media (max-width: 600px) {
+  :root {
+    --content-padding: 1rem;
+  }
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  .hero img {
+    height: 180px;
+  }
+  .hero-content h1 {
+    font-size: 1.4em;
+    padding: 0.2em 0.4em;
+    margin-bottom: 0.2em;
+  }
+  .hero-content h2 {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  .hero-content .button {
+    font-size: 1em;
+    padding: 0.8em 1.6em;
+  }
+  .card {
+    padding: 1em;
+    margin: 1em 0;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7em;
+  }
+  #testimonials img {
+    float: none;
+    margin: 0 auto 1em auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
   .hero img {
     height: 160px;
   }
   .hero-content h1 {
     font-size: 1.2em;
+    width: 90%;
   }
   .hero-content h2 {
-    font-size: 1em;
+    font-size: 0.9em;
+    width: 90%;
   }
   .card {
-    padding: 0.7em;
+    padding: 0.8em;
+  }
+  .toc li {
+    margin: 0.5em 0;
+  }
+  form label {
+    font-size: 0.9em;
+  }
+  form input, form select, form textarea {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+    padding: 0.6em;
   }
   .gallery {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
