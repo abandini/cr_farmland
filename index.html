@@ -15,6 +15,136 @@
   <script type="application/ld+json" id="schema-org-json"></script>
 </head>
 <body>
-  <!-- Content will be filled after images are found and optimized -->
+  <!-- Hero Section with Background Image -->
+  <section class="hero" style="position:relative;">
+    <!-- TODO: Replace with actual hero image of lush Costa Rican farmland -->
+    <img src="images/hero-farmland-cr-placeholder.jpg" alt="Lush Costa Rican Farmland - Hero Image" loading="eager" style="width:100%;height:auto;object-fit:cover;max-height:450px;">
+    <div class="hero-content" style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;background:rgba(46,125,50,0.35);">
+      <h1>Premium Domain: FarmlandInCostaRica.com - $5,000</h1>
+      <h2>Establish Your Authority in the Thriving Costa Rican Agricultural Market</h2>
+      <a href="#contact" class="button">Inquire About This Domain</a>
+    </div>
+  </section>
+
+  <!-- Table of Contents -->
+  <nav class="toc card">
+    <h2>Contents</h2>
+    <ul>
+      <li><a href="#value">Why This Domain Is Worth $5,000</a></li>
+      <li><a href="#overview">Costa Rica: An Agricultural Paradise</a></li>
+      <li><a href="#investment">Growing Investments in Fertile Ground</a></li>
+      <li><a href="#expat">Living the Farm Life in Costa Rica</a></li>
+      <li><a href="#purchase">Secure This Premium Domain Today</a></li>
+      <li><a href="#gallery">Image Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Domain Value Proposition -->
+  <section id="value" class="card">
+    <h2>Why This Domain Is Worth $5,000</h2>
+    <ul>
+      <li>Exact match keywords for search dominance</li>
+      <li>Built-in geo-targeting for Costa Rica</li>
+      <li>Agricultural niche specificity</li>
+      <li>Memorability and brand potential</li>
+      <li>Ready-made audience of expats and investors</li>
+    </ul>
+    <!-- Placeholder for infographic: Domain value and search trends -->
+    <img src="images/infographic-domain-value-placeholder.jpg" alt="Infographic: Domain Value and Search Trends" loading="lazy" style="max-width:400px;">
+  </section>
+
+  <!-- Costa Rica Agricultural Overview -->
+  <section id="overview" class="card">
+    <h2>Costa Rica: An Agricultural Paradise</h2>
+    <p>Learn about Costa Rica's agricultural benefits, growing expat population, agricultural exports, and land prices.</p>
+    <!-- Placeholder for farmland landscape image -->
+    <img src="images/farmland-overview-placeholder.jpg" alt="Costa Rican Farmland Landscape" loading="lazy">
+    <!-- Placeholder for infographic: Agricultural statistics -->
+    <img src="images/infographic-agriculture-stats-placeholder.jpg" alt="Infographic: Costa Rica Agriculture Statistics" loading="lazy" style="max-width:400px;">
+  </section>
+
+  <!-- Investment Opportunity -->
+  <section id="investment" class="card">
+    <h2>Growing Investments in Fertile Ground</h2>
+    <p>Information about investment potential in Costa Rican farmland, popular crops, and ROI potential.</p>
+    <!-- Placeholder for investment-related image -->
+    <img src="images/investment-opportunity-placeholder.jpg" alt="Investment in Costa Rican Farmland" loading="lazy">
+  </section>
+
+  <!-- Expat Benefits -->
+  <section id="expat" class="card">
+    <h2>Living the Farm Life in Costa Rica</h2>
+    <p>Lifestyle benefits for expats interested in farming: climate, community, cost of living, and quality of life.</p>
+    <!-- Placeholder for expat lifestyle image -->
+    <img src="images/expat-farm-life-placeholder.jpg" alt="Expat Enjoying Farm Life in Costa Rica" loading="lazy">
+  </section>
+
+  <!-- Domain Purchase Process -->
+  <section id="purchase" class="card">
+    <h2>Secure This Premium Domain Today</h2>
+    <ol>
+      <li>Submit an inquiry using the contact form below</li>
+      <li>Receive a reply with purchase and payment details</li>
+      <li>Complete payment via secure methods</li>
+      <li>Domain transfer is initiated and completed</li>
+    </ol>
+    <!-- Placeholder for purchase process image -->
+    <img src="images/domain-purchase-process-placeholder.jpg" alt="Domain Purchase Process Illustration" loading="lazy">
+  </section>
+
+  <!-- Image Gallery -->
+  <section id="gallery" class="card">
+    <h2>Image Gallery: Costa Rican Farmland</h2>
+    <div class="gallery" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1em;">
+      <!-- Placeholders for gallery images -->
+      <img src="images/gallery-1-placeholder.jpg" alt="Costa Rican Farmland Aerial View" loading="lazy">
+      <img src="images/gallery-2-placeholder.jpg" alt="Tropical Crops in Costa Rica" loading="lazy">
+      <img src="images/gallery-3-placeholder.jpg" alt="Rolling Hills and Farmland in Costa Rica" loading="lazy">
+      <img src="images/gallery-4-placeholder.jpg" alt="Sunrise Over Costa Rican Fields" loading="lazy">
+      <img src="images/gallery-5-placeholder.jpg" alt="Farm Workers in Costa Rica" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="card">
+    <h2>Testimonials from Agricultural Experts</h2>
+    <!-- Placeholder for testimonial image -->
+    <img src="images/testimonial-expert-placeholder.jpg" alt="Agricultural Expert Testimonial" loading="lazy" style="max-width:200px;float:right;margin-left:1em;">
+    <blockquote>
+      <p>“Costa Rica’s farmland offers exceptional value and opportunity for investors and expats alike.”</p>
+      <footer>– Dr. Ana Morales, Agricultural Economist</footer>
+    </blockquote>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="card">
+    <h2>Inquire About FarmlandInCostaRica.com</h2>
+    <form action="https://getform.io/f/bolmoqya" method="POST" onsubmit="setTimeout(function(){window.location.href='thank-you.html';}, 100); return true;">
+      <input type="hidden" name="domain" value="crfarmland">
+      <label for="name">Name*:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email*:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+      <label for="budget">Budget Confirmation*:</label>
+      <select id="budget" name="budget" required>
+        <option value="">Select your budget range</option>
+        <option value="$5,000 or above">$5,000 or above</option>
+        <option value="$3,000–$5,000">$3,000–$5,000</option>
+        <option value="$1,000–$3,000">$1,000–$3,000</option>
+      </select>
+      <label>Interest Level:</label>
+      <label><input type="radio" name="interest" value="Very Interested"> Very Interested</label>
+      <label><input type="radio" name="interest" value="Somewhat Interested"> Somewhat Interested</label>
+      <label><input type="radio" name="interest" value="Just Curious"> Just Curious</label>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <input type="submit" value="Submit Domain Inquiry">
+    </form>
+  </section>
+
 </body>
 </html>
