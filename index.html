@@ -120,8 +120,8 @@
     <h2>Costa Rica: An Agricultural Paradise</h2>
     <p>Costa Rica offers exceptional agricultural opportunities thanks to its fertile soil, year-round growing season, and stable climate. With over 12 distinct growing zones, the country supports a diverse range of crops from coffee and cacao to tropical fruits and specialty vegetables.</p>
     <p>The country's agricultural sector contributes approximately 5% to the GDP and employs about 12% of the workforce. Costa Rica has established itself as a global leader in sustainable and organic farming practices, with certifications that command premium prices in international markets.</p>
-    <!-- Costa Rican agricultural landscape image -->
-    <img src="https://images.unsplash.com/photo-1591808216268-ce0b82787efe?auto=format&fit=crop&w=1200&q=80" alt="Lush Green Costa Rican Agricultural Landscape" loading="lazy">
+    <!-- Costa Rican coffee plantation image -->
+    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80" alt="Lush Costa Rican Coffee Plantation with Mountains" loading="lazy">
     <p>The growing expat population has created a thriving community of international farmers who benefit from knowledge exchange and cooperative marketing. Land prices remain competitive compared to North American and European markets, with agricultural parcels ranging from $5,000 to $20,000 per hectare depending on location, infrastructure, and soil quality.</p>
     <!-- Agricultural statistics infographic -->
     <div class="infographic" style="background: #f5f9f5; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0; max-width: 500px;">
@@ -233,7 +233,7 @@
   <!-- Contact Form -->
   <section id="contact" class="card">
     <h2>Inquire About FarmlandInCostaRica.com</h2>
-    <form action="https://getform.io/f/bolmoqya" method="POST" onsubmit="setTimeout(function(){window.location.href='thank-you.html';}, 100); return true;">
+    <form action="https://getform.io/f/bolmoqya" method="POST" id="contactForm" onsubmit="document.getElementById('submitBtn').disabled = true; document.getElementById('submitBtn').value = 'Sending...'; setTimeout(function(){window.location.href='thank-you.html';}, 1500); return true;">
       <input type="hidden" name="domain" value="crfarmland">
       <label for="name">Name*:</label>
       <input type="text" id="name" name="name" required>
@@ -254,7 +254,7 @@
       <label><input type="radio" name="interest" value="Just Curious"> Just Curious</label>
       <label for="message">Message:</label>
       <textarea id="message" name="message"></textarea>
-      <input type="submit" value="Submit Domain Inquiry">
+      <input type="submit" id="submitBtn" value="Submit Domain Inquiry">
     </form>
   </section>
   </div><!-- End .container -->
