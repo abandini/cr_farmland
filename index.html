@@ -11,8 +11,42 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
-  <!-- Structured Data Placeholder -->
-  <script type="application/ld+json" id="schema-org-json"></script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "FarmlandInCostaRica.com",
+        "url": "https://farmlandincostarica.com",
+        "description": "Premium domain for Costa Rican agricultural investments, expat farming resources, and real estate businesses."
+      },
+      {
+        "@type": "Product",
+        "name": "FarmlandInCostaRica.com Domain",
+        "description": "Premium domain name for agricultural investments, expat farming resources, and Costa Rican real estate businesses.",
+        "offers": {
+          "@type": "Offer",
+          "price": "5000",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://farmlandincostarica.com/#contact"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "Costa Rican Farmland Investments",
+        "description": "Information about agricultural opportunities and farmland investments in Costa Rica.",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Costa Rica"
+        },
+        "knowsAbout": ["Costa Rica farmland", "agricultural investments", "tropical farming", "expat farming", "Costa Rica real estate"]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Hero Section with Background Image -->
@@ -58,9 +92,11 @@
   <!-- Costa Rica Agricultural Overview -->
   <section id="overview" class="card">
     <h2>Costa Rica: An Agricultural Paradise</h2>
-    <p>Learn about Costa Rica's agricultural benefits, growing expat population, agricultural exports, and land prices.</p>
+    <p>Costa Rica offers exceptional agricultural opportunities thanks to its fertile soil, year-round growing season, and stable climate. With over 12 distinct growing zones, the country supports a diverse range of crops from coffee and cacao to tropical fruits and specialty vegetables.</p>
+    <p>The country's agricultural sector contributes approximately 5% to the GDP and employs about 12% of the workforce. Costa Rica has established itself as a global leader in sustainable and organic farming practices, with certifications that command premium prices in international markets.</p>
     <!-- Placeholder for farmland landscape image -->
     <img src="images/farmland-overview-placeholder.jpg" alt="Costa Rican Farmland Landscape" loading="lazy">
+    <p>The growing expat population has created a thriving community of international farmers who benefit from knowledge exchange and cooperative marketing. Land prices remain competitive compared to North American and European markets, with agricultural parcels ranging from $5,000 to $20,000 per hectare depending on location, infrastructure, and soil quality.</p>
     <!-- Placeholder for infographic: Agricultural statistics -->
     <img src="images/infographic-agriculture-stats-placeholder.jpg" alt="Infographic: Costa Rica Agriculture Statistics" loading="lazy" style="max-width:400px;">
   </section>
@@ -68,17 +104,37 @@
   <!-- Investment Opportunity -->
   <section id="investment" class="card">
     <h2>Growing Investments in Fertile Ground</h2>
-    <p>Information about investment potential in Costa Rican farmland, popular crops, and ROI potential.</p>
+    <p>Costa Rican farmland represents a compelling investment opportunity with potential returns that outpace many traditional investment vehicles. Agricultural land has seen steady appreciation of 5-8% annually over the past decade, with productive farms generating operational returns of 8-15% depending on crop selection and management practices.</p>
+    <h3>High-Value Crop Opportunities</h3>
+    <ul>
+      <li><strong>Coffee:</strong> Premium arabica varieties command top prices in specialty markets, with organic and shade-grown certifications adding significant value.</li>
+      <li><strong>Cacao:</strong> Fine flavor cacao for craft chocolate production offers returns of up to 20% for well-managed plantations.</li>
+      <li><strong>Tropical Fruits:</strong> Mangoes, pineapples, and exotic fruits like rambutan and pitaya enjoy strong export demand.</li>
+      <li><strong>Specialty Crops:</strong> Vanilla, black pepper, and cardamom thrive in Costa Rica's microclimate and offer exceptional profit margins.</li>
+    </ul>
     <!-- Placeholder for investment-related image -->
     <img src="images/investment-opportunity-placeholder.jpg" alt="Investment in Costa Rican Farmland" loading="lazy">
+    <p>Beyond direct agricultural returns, many investors benefit from land appreciation and potential ecotourism or agritourism revenue streams. Costa Rica's political stability, established legal framework for foreign ownership, and commitment to environmental sustainability make it an increasingly attractive destination for agricultural investment capital seeking both returns and impact.</p>
   </section>
 
   <!-- Expat Benefits -->
   <section id="expat" class="card">
     <h2>Living the Farm Life in Costa Rica</h2>
-    <p>Lifestyle benefits for expats interested in farming: climate, community, cost of living, and quality of life.</p>
+    <p>Costa Rica offers expat farmers an exceptional quality of life that combines agricultural opportunity with the country's renowned "Pura Vida" lifestyle. The year-round growing season and diverse microclimates allow for continuous cultivation and experimentation with various crops.</p>
+    
+    <h3>Climate & Natural Beauty</h3>
+    <p>With average temperatures ranging from 70-85°F (21-29°C) depending on elevation, Costa Rica provides comfortable farming conditions throughout the year. The distinct wet and dry seasons create predictable growing cycles, while the country's commitment to environmental protection ensures clean air, water, and soil for sustainable agriculture.</p>
+    
     <!-- Placeholder for expat lifestyle image -->
     <img src="images/expat-farm-life-placeholder.jpg" alt="Expat Enjoying Farm Life in Costa Rica" loading="lazy">
+    
+    <h3>Expat Community & Support</h3>
+    <p>A thriving community of international farmers has established networks for knowledge sharing, equipment co-ops, and marketing collaboratives. Regular farmers' markets, agricultural fairs, and community events provide both social connection and direct sales opportunities.</p>
+    
+    <h3>Affordable Living</h3>
+    <p>The cost of living remains 30-40% lower than in the United States or Western Europe, with agricultural land prices offering exceptional value. Many expat farmers supplement their income through agritourism, farm stays, or value-added product creation, creating diverse revenue streams while enjoying a fulfilling lifestyle.</p>
+    
+    <p>With excellent healthcare (consistently ranked among the best in Latin America), reliable internet connectivity even in rural areas, and a welcoming local culture, Costa Rica continues to attract expats seeking to combine farming passion with quality of life.</p>
   </section>
 
   <!-- Domain Purchase Process -->
